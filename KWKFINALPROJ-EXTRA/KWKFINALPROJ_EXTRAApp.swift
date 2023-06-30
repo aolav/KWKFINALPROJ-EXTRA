@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-@main
-struct KWKFINALPROJ_EXTRAApp: App {
+@main struct KWKFINALPROJ_EXTRAApp: App {
     var body: some Scene {
         WindowGroup {
-       //     ContentView()
+           ContentView()
         }
     }
 }
