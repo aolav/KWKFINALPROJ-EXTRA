@@ -106,108 +106,106 @@ struct AboutView: View {
 
 struct CelebView: View {
     let gradient = Gradient(colors: [Color("ColorPink"),
-             Color("ColorPink"), Color("white")])
+                                     Color("ColorPink"), Color("white")])
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 VStack {
-
+                    
                     Text("Celebrity Palette")
-                            .font(.system(size: 44, weight: .bold, design: .rounded))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .padding(.top, 110)
-
-                        Text("Get insider details on a popular celebrity's makeup")
+                        .font(.system(size: 44, weight: .bold, design: .rounded))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(.top, 110)
+                    
+                    Text("Get insider details on a popular celebrity's makeup")
                         .font(.title3)
                         .foregroundColor(.black)
-                    let gradient = Gradient(colors: [Color("ColorPink"), Color("ColorPink"), Color("white")])
+                    
                 }
                 Spacer()
+                GalleryView()
             }
-            GalleryView()
-        }
-
-        .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
-        .edgesIgnoringSafeArea(.all)
+            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
+            .edgesIgnoringSafeArea(.all)
         }
     }
-
-struct QuizView: View {
-    let gradient = Gradient(colors: [Color("ColorPurple"),
-             Color("ColorPink"), Color("white")])
     
-    var body: some View {
-        VStack {
-            Spacer()
-            HStack {
+    struct QuizView: View {
+        let gradient = Gradient(colors: [Color("ColorPurple"),
+                                         Color("ColorPink"), Color("white")])
+        
+        var body: some View {
+            VStack {
                 Spacer()
-                
-                Text("Coming soon...")
+                HStack {
+                    Spacer()
+                    
+                    Text("Coming soon...")
                         .font(.system(size: 44, weight: .bold, design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(.purple)
                         .padding(.top, 30)
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
+            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
+            .edgesIgnoringSafeArea(.all)
         }
-        .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
-        .edgesIgnoringSafeArea(.all)
     }
-}
-    var body: some View {
-        NavigationView {
-            ZStack {
-                Color.blue.opacity(0.1)
+//       var body: some View {
+//        NavigationView {
+//            ZStack {
+//                Color.blue.opacity(0.1)
+//            }
+//            .navigationTitle("Quiz")
+//        }
+//    }
+    
+    
+    
+    struct ContentView: View {
+        var body: some View {
+            //        VStack  {
+            //            Image("bloomelogo")
+            //                .resizable(capInsets: EdgeInsets(top: 0.0, leading: -1.0, bottom: 0.0, trailing: 0.0))
+            //                .aspectRatio(contentMode: .fit)
+            //                .frame(width: 250, height: 190)
+            //                .padding()
+            //            Text("A new blooming of self")
+            //                .font(.title3)
+            //                .fontWeight(.medium)
+            //                .foregroundColor(Color("AccentColor"))
+            //                    }
+            TabView {
+                
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                            .foregroundColor(Color("AccentColor"))
+                    }
+                AboutView()
+                    .tabItem {
+                        Image(systemName: "star.fill")
+                        Text("About")
+                            .foregroundColor(Color("AccentColor"))
+                    }
+                CelebView()
+                    .tabItem {
+                        Image(systemName: "mouth.fill")
+                        Text("Celeb Palette")
+                            .foregroundColor(Color("AccentColor"))
+                    }
+                QuizView()
+                    .tabItem {
+                        Image(systemName: "crown.fill")
+                        Text("Quiz")
+                            .foregroundColor(Color("AccentColor"))
+                    }
             }
-            .navigationTitle("Quiz")
-        }
-    }
-
-
-
-struct ContentView: View {
-    var body: some View {
-//        VStack  {
-//            Image("bloomelogo")
-//                .resizable(capInsets: EdgeInsets(top: 0.0, leading: -1.0, bottom: 0.0, trailing: 0.0))
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: 250, height: 190)
-//                .padding()
-//            Text("A new blooming of self")
-//                .font(.title3)
-//                .fontWeight(.medium)
-//                .foregroundColor(Color("AccentColor"))
-//                    }
-        TabView {
-            
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                        .foregroundColor(Color("AccentColor"))
-                }
-            AboutView()
-            .tabItem {
-                Image(systemName: "star.fill")
-                Text("About")
-                    .foregroundColor(Color("AccentColor"))
-        }
-            CelebView()
-                .tabItem {
-                    Image(systemName: "mouth.fill")
-                    Text("Celeb Palette")
-                        .foregroundColor(Color("AccentColor"))
-                }
-            QuizView()
-                .tabItem {
-                    Image(systemName: "crown.fill")
-                    Text("Quiz")
-                        .foregroundColor(Color("AccentColor"))
-                }
-                }
         }
     }
     
@@ -216,3 +214,4 @@ struct ContentView: View {
             ContentView()
         }
     }
+}
