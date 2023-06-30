@@ -106,47 +106,84 @@ struct AboutView: View {
 
 struct CelebView: View {
     let gradient = Gradient(colors: [Color("ColorPink"),
+                                     Color("ColorPink"), Color("ColorPurple")])
+    var body: some View {
+        ZStack {
+            VStack {
+                HStack {
+                   // Spacer()
+                    VStack {
+            
+                        Text("Celebrity Palette")
+                            .font(.system(size: 40, weight: .bold, design: .rounded))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                            .padding(.top, 100)
+                        
+                        Text("Get insider details on trending celebrity makeup")
+                            .font(.title2)
+                        .fontWeight(.regular)
+                        .padding()
+                        .foregroundColor(Color.black)
+                            .foregroundColor(.black)
+                        //Spacer()
+                    }
+                    Spacer()
+                }
+                GalleryView()
+                    //.padding()
+            }
+            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
+            .edgesIgnoringSafeArea(.all)
+        }
+    }
+}
+    
+struct QuizView: View {
+    @State private var result1 = ""
+    let gradient = Gradient(colors: [Color("ColorPurple"),
                                      Color("ColorPink"), Color("white")])
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                VStack {
-                    
-                    Text("Celebrity Palette")
-                        .font(.system(size: 44, weight: .bold, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .padding(.top, 110)
-                    
-                    Text("Get insider details on a popular celebrity's makeup")
-                        .font(.title3)
-                        .foregroundColor(.black)
-                    
-                }
-                Spacer()
-                GalleryView()
-            }
-            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
-            .edgesIgnoringSafeArea(.all)
-        }
-    }
-    
-    struct QuizView: View {
-        let gradient = Gradient(colors: [Color("ColorPurple"),
-                                         Color("ColorPink"), Color("white")])
-        
-        var body: some View {
+        NavigationStack {
             VStack {
                 Spacer()
-                HStack {
-                    Spacer()
-                    
-                    Text("Coming soon...")
-                        .font(.system(size: 44, weight: .bold, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.purple)
-                        .padding(.top, 30)
+              //  HStack {
+                   // Spacer()
+                    Text("\n\nPreferred Look\n\n\n")
+                    .font(.system(size: 44, weight: .bold, design: .rounded))
+                    .fontWeight(.bold)
+                    .foregroundColor(.purple)
+                    .padding(.top, 30)
+                    Button("Natural") {
+                        result1 = "Glossier 💄"
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.accentColor)
+                    .font(.system(size:40))
+                Button("Glam") {
+                    result1 = "Pat McGrath 💋"
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.accentColor)
+                .font(.system(size:40))
+
+                Button("Edgy") {
+                    result1 = "Colourpop 👩‍🎤"
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.accentColor)
+                .font(.system(size:40))
+                
+                Text("\(result1) \n\n\n\n")
+                .font(.system(size:50))
+                NavigationLink(destination:SecondView()) {Text("Next Page ⏩️")
+                }
+//                    Text("Coming soon...")
+//                        .font(.system(size: 44, weight: .bold, design: .rounded))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(.purple)
+//                        .padding(.top, 30)
                     Spacer()
                 }
                 Spacer()
@@ -155,6 +192,8 @@ struct CelebView: View {
             .edgesIgnoringSafeArea(.all)
         }
     }
+//}
+
 //       var body: some View {
 //        NavigationView {
 //            ZStack {
@@ -214,4 +253,3 @@ struct CelebView: View {
             ContentView()
         }
     }
-}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6525D1C02A4F306C00D43E9B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525D1BF2A4F306C00D43E9B /* SecondView.swift */; };
+		6525D1C22A4F307A00D43E9B /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525D1C12A4F307A00D43E9B /* ThirdView.swift */; };
 		657A27692A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A27682A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift */; };
 		657A276B2A4E751E00B7D6F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A276A2A4E751E00B7D6F6 /* ContentView.swift */; };
 		657A276D2A4E752100B7D6F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657A276C2A4E752100B7D6F6 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6525D1BF2A4F306C00D43E9B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		6525D1C12A4F307A00D43E9B /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		657A27652A4E751E00B7D6F6 /* KWKFINALPROJ-EXTRA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KWKFINALPROJ-EXTRA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657A27682A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWKFINALPROJ_EXTRAApp.swift; sourceTree = "<group>"; };
 		657A276A2A4E751E00B7D6F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				657CC29A2A4EC5590096E85B /* GalleryView.swift */,
 				657A276C2A4E752100B7D6F6 /* Assets.xcassets */,
 				657A276E2A4E752100B7D6F6 /* Preview Content */,
+				6525D1BF2A4F306C00D43E9B /* SecondView.swift */,
+				6525D1C12A4F307A00D43E9B /* ThirdView.swift */,
 			);
 			path = "KWKFINALPROJ-EXTRA";
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				657A276B2A4E751E00B7D6F6 /* ContentView.swift in Sources */,
+				6525D1C02A4F306C00D43E9B /* SecondView.swift in Sources */,
 				657CC2972A4EB4840096E85B /* ProfileView.swift in Sources */,
 				657A27692A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift in Sources */,
+				6525D1C22A4F307A00D43E9B /* ThirdView.swift in Sources */,
 				657CC29B2A4EC5590096E85B /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
