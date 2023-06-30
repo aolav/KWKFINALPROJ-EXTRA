@@ -11,6 +11,8 @@
 		657A276B2A4E751E00B7D6F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A276A2A4E751E00B7D6F6 /* ContentView.swift */; };
 		657A276D2A4E752100B7D6F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657A276C2A4E752100B7D6F6 /* Assets.xcassets */; };
 		657A27702A4E752100B7D6F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657A276F2A4E752100B7D6F6 /* Preview Assets.xcassets */; };
+		657CC2972A4EB4840096E85B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC2962A4EB4840096E85B /* ProfileView.swift */; };
+		657CC29B2A4EC5590096E85B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC29A2A4EC5590096E85B /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		657A276A2A4E751E00B7D6F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		657A276C2A4E752100B7D6F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657A276F2A4E752100B7D6F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		657CC2962A4EB4840096E85B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		657CC29A2A4EC5590096E85B /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				657A27682A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift */,
 				657A276A2A4E751E00B7D6F6 /* ContentView.swift */,
+				657CC2962A4EB4840096E85B /* ProfileView.swift */,
+				657CC29A2A4EC5590096E85B /* GalleryView.swift */,
 				657A276C2A4E752100B7D6F6 /* Assets.xcassets */,
 				657A276E2A4E752100B7D6F6 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				657A276B2A4E751E00B7D6F6 /* ContentView.swift in Sources */,
+				657CC2972A4EB4840096E85B /* ProfileView.swift in Sources */,
 				657A27692A4E751E00B7D6F6 /* KWKFINALPROJ_EXTRAApp.swift in Sources */,
+				657CC29B2A4EC5590096E85B /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
