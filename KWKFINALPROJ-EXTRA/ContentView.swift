@@ -66,10 +66,34 @@ struct AboutView: View {
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                     
-                        Text("The Vision & Team")
-                        .font(.title3)
+                        Text("Goals")
+                        .font(.title2)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.top, 2)
+                        
+                    Text("We want to make beauty and makeup less intimidating for beginners, and instead make it a fun and immersive journey. We intend for our users to find their style and be comfortable in their own skin.")
+                        .padding()
+                        .font(.system(size: 20, weight: .regular, design: .rounded))
+                    .foregroundColor(.purple)
+                    .padding(.top, -20)
+                    .padding(.bottom, 20)
+                    
+                    
+                    Text("Vision")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.top, 2)
+                    
+                    
+                    Text("We attempt to condense makeup trends and sources to serve as a singular beauty mentor. We are constantly looking into building features that cater to each user's unique needs.")
+                        .padding()
+                    .font(.system(size: 20, weight: .regular, design: .rounded))
+                    .foregroundColor(.purple)
+                    .padding(.top, -20)
+                    .padding(.top, 2)
+                    
                 }
                 Spacer()
             }
@@ -81,11 +105,9 @@ struct AboutView: View {
 }
 
 struct CelebView: View {
-    let gradient = Gradient(colors: [Color("ColorPurple"), Color("White")])
+    let gradient = Gradient(colors: [Color("ColorPink"),
+             Color("ColorPink"), Color("white")])
     var body: some View {
-        let gradient = Gradient(colors: [Color("ColorPink"),
-                 Color("ColorPink"), Color("white")])
-    
         VStack {
             HStack {
                 Spacer()
@@ -95,17 +117,18 @@ struct CelebView: View {
                             .font(.system(size: 44, weight: .bold, design: .rounded))
                             .fontWeight(.bold)
                             .foregroundColor(.black)
-                            .padding(.top, 100)
+                            .padding(.top, 110)
 
-                        Text("Get an insider on a popular celebrity's makeup")
+                        Text("Get insider details on a popular celebrity's makeup")
                         .font(.title3)
                         .foregroundColor(.black)
-                        .padding(.top, 2)
+                    let gradient = Gradient(colors: [Color("ColorPink"), Color("ColorPink"), Color("white")])
                 }
                 Spacer()
             }
-            Spacer()
+            GalleryView()
         }
+
         .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
         .edgesIgnoringSafeArea(.all)
         }
@@ -120,6 +143,12 @@ struct QuizView: View {
             Spacer()
             HStack {
                 Spacer()
+                
+                Text("Coming soon...")
+                        .font(.system(size: 44, weight: .bold, design: .rounded))
+                        .fontWeight(.bold)
+                        .foregroundColor(.purple)
+                        .padding(.top, 30)
                 Spacer()
             }
             Spacer()
