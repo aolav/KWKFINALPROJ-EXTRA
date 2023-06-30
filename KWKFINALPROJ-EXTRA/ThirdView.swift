@@ -13,10 +13,14 @@ struct ThirdView: View {
         NavigationStack {
             VStack{
                 Text("\nGet a makeup style based on your features\n\n\n")
-                    .font(.system(size: 33, weight: .bold, design: .rounded))
+                    .padding()
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
                     .fontWeight(.bold)
                     .foregroundColor(.purple)
                     .padding(.top, 30)
+                    Spacer()
+                Spacer()
                 Button("Sharp features") {
                     result3 = "90s makeup 💿"
                 }
@@ -30,7 +34,7 @@ struct ThirdView: View {
                 .tint(.accentColor)
                 .font(.system(size:35))
                 Button("Small features") {
-                    result3 = "Douyin makeup 🧚‍♂️"
+                    result3 = "Douyin makeup🧚‍♂️"
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.accentColor)

@@ -38,6 +38,7 @@ struct HomeView: View {
                 Spacer()
             }
             Spacer()
+
         }
         .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
         .edgesIgnoringSafeArea(.all)
@@ -150,11 +151,15 @@ struct QuizView: View {
                 Spacer()
               //  HStack {
                    // Spacer()
-                    Text("\n\nPreferred Look\n\n\n")
-                    .font(.system(size: 44, weight: .bold, design: .rounded))
+                    Text("\n\nGet a makeup brand based on your desired look\n\n\n")
+                    .padding()
+                    .font(.system(size: 24.4, weight: .bold, design: .rounded))
+                    .multilineTextAlignment(.center)
                     .fontWeight(.bold)
                     .foregroundColor(.purple)
                     .padding(.top, 30)
+                    Spacer()
+                Spacer()
                     Button("Natural") {
                         result1 = "Glossier 💄"
                     }
@@ -177,19 +182,18 @@ struct QuizView: View {
                 
                 Text("\(result1) \n\n\n\n")
                 .font(.system(size:50))
-                NavigationLink(destination:SecondView()) {Text("Next Page ⏩️")
+                NavigationLink(destination:SecondView()) {Text("Next Page 👉")
+                        .padding()
+                        .fontWeight(.bold)
+                        .font(.title2)
+                        .foregroundColor(Color("ColorBarb"))
                 }
-//                    Text("Coming soon...")
-//                        .font(.system(size: 44, weight: .bold, design: .rounded))
-//                        .fontWeight(.bold)
-//                        .foregroundColor(.purple)
-//                        .padding(.top, 30)
                     Spacer()
                 }
-                Spacer()
+//            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
+//            .edgesIgnoringSafeArea(.all)
             }
-            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
-            .edgesIgnoringSafeArea(.all)
+
         }
     }
 //}

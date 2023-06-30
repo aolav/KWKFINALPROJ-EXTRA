@@ -13,7 +13,9 @@ struct SecondView: View {
         NavigationStack {
             VStack{
                 Text("\nGet a skincare brand based on your skin type\n\n\n")
-                    .font(.system(size: 44, weight: .bold, design: .rounded))
+                    .padding()
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
                     .fontWeight(.bold)
                     .foregroundColor(.purple)
                     .padding(.top, 30)
@@ -43,7 +45,12 @@ struct SecondView: View {
                 Text("\(result2) \n\n\n\n")
                     .font(.system(size:50))
                 
-            NavigationLink(destination:ThirdView()) { Text("Next Page ⏩️")
+            NavigationLink(destination:ThirdView())
+                { Text("Next Page 💅")
+                    .padding()
+                    .fontWeight(.bold)
+                    .font(.title2)
+                    .foregroundColor(Color("ColorBarb"))
             }
         }
     }
